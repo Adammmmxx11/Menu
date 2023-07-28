@@ -1,0 +1,201 @@
+------- Foto-----
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.accordion {
+  width: min(80vw, 700px);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 45%;
+}
+input[type="checkbox"] {
+  display: none;
+  appearance: none;
+}
+.accordion-item {
+  padding: 1em;
+  background-color: grey;
+  border-radius: 0.5em;
+}
+.accordion-item:not(:last-child) {
+  margin-bottom: 1em;
+}
+.accordion-content{
+display: flex;
+
+    flex-direction: row;
+
+    width: 100%;
+    height: 40vh;
+  color: #606060;
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+label {
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 1em 0;
+}
+input[type="checkbox"] ~ label .arrow {
+  display: inline-block;
+  transition: 2s;
+}
+
+input[type="checkbox"]:checked ~ label .arrow {
+  transform: rotate(90deg);
+}
+input[type="checkbox"]:checked ~ label {
+  color: #0083e9;
+}
+input[type="checkbox"] ~ .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 4s;
+}
+input[type="checkbox"]:checked ~ .accordion-content {
+  max-height: 100vh;
+
+  transition: 2s;
+}
+
+  
+.item:hover {
+    flex:7;
+}
+
+}
+.accordion2 {
+  width: min(50vw, 500px);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+input[type="checkbox"] {
+  display: none;
+  appearance: none;
+}
+.accordion-item2 {
+  padding: 1em;
+  background-color: grey;
+  border-radius: 0.5em;
+}
+.accordion-item2:not(:last-child) {
+  margin-bottom: 1em;
+}
+.accordion-content2{
+display: flex;
+
+    flex-direction: row;
+
+    width: 100%;
+    height: 8vh;
+  color: #606060;
+  line-height: 1.8em;
+}
+label {
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 1em 0;
+}
+input[type="checkbox"] ~ label .arrow {
+  display: inline-block;
+  transition: 2s;
+}
+
+input[type="checkbox"]:checked ~ label .arrow {
+  transform: rotate(90deg);
+}
+input[type="checkbox"]:checked ~ label {
+  color: #0083e9;
+}
+input[type="checkbox"] ~ .accordion-content2 {
+  max-height: 0;
+  overflow: hidden;
+  transition: 2s;
+}
+input[type="checkbox"]:checked ~ .accordion-content2 {
+  max-height: 100vh;
+
+  transition: 4s;
+}
+
+  
+.item:hover {
+    flex:7;
+}
+
+.container {
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    position: relative;
+    margin-bottom: 45px;
+    font-size: 30px; 
+    text-transform: uppercase;
+    color: #424242;
+    padding: 5px;
+    display: inline-block;
+    box-shadow: inset 0px 0px 30px -10px rgb(255,255,255);
+}
+
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 58vh;
+}
+
+.item{
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+}
+
+.item:hover {
+    flex:7;
+}
+
+.sci{
+    display: flex;
+    list-style: none;
+    margin-top: 1px;
+    color: black;
+}
+
+.sci li{
+    margin-right: 20px;
+}
+
+.sci li i{
+    font-size: 2rem;
+}
+
+.sci li i:hover{
+    color: black;
+    transition: .5s;
+}
+.p{
+font-size;60px;
+}
